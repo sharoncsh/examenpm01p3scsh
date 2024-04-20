@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="#DDD0C8">
+
+    <ImageView
+        android:id="@+id/imageViewEntrevista"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/perfil" />
+
+    <TextView
+        android:id="@+id/text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/imageViewEntrevista"
+        android:layout_marginTop="10dp"
+        android:text="ID: 78945" />
+
+    <TextView
+        android:id="@+id/textViewDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@id/imageViewEntrevista"
+        android:text="Descripción de la entrevista"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/imageViewEntrevista"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textViewPeriodista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageViewEntrevista"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/textViewDescripcion"
+        android:text="Nombre del periodista"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textViewFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageViewEntrevista"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/textViewPeriodista"
+        android:text="Fecha de la entrevista"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btnReproducir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewFecha"
+        android:layout_toEndOf="@id/imageViewEntrevista"
+        android:text="Reproducir"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#323232"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:onClick="reproducirAudio" />
+
+</RelativeLayout>
